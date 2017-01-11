@@ -1,4 +1,5 @@
 # Code to find the Crisp Set value and Fuzzy set value for x : The percent of sky covered with clouds
+#!usr/bin/python
 import numpy as np
 import matplotlib.pyplot as plt
 # Charecteristic function for Crisp Set
