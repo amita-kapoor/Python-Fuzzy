@@ -1,3 +1,4 @@
+#!usr/bin/python
 # Code to generate Fibonacci sequence
 # It uses a function fibonacci to print a fibonacci sequence less than n 
 def fibonacci(n):
