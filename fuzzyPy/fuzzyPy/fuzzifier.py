@@ -12,7 +12,7 @@ class Triangle():
        self.high = self.trimf(x, high[0], high[1], high[2])
     
 # Defines TRiangular membership finction f:x->y, with 'a' and 'c' the base of triangle and 'b' is peak
-    def trimf(x, a, b, c):
+    def trimf(self, x, a, b, c):
         X1 = (x-a)/(b-a)
         X2 = (c-x)/(c-b)
         X3=np.minimum(X1, X2)
@@ -27,7 +27,7 @@ class Trapezoid():
         self.high = self.trapmf(x, high[0], high[1], high[2],high[3])
         
         
-    def trapmf(x, a, b, c, d):
+    def trapmf(self, x, a, b, c, d):
         X1 = (x - a) / (b - a)
         X2 = np.ones(x.size)
         X3 = (d - x) / (d-c)
@@ -44,6 +44,6 @@ class Gauss():
         self.high = self.gaussmf(x, high[0], high[1])
 
 
-    def gaussmf(x, c, v):
+    def gaussmf(self, x, c, v):
         y = np.exp(-(x - c) ^ 2 / 2 * v ^ 2)
         return y
