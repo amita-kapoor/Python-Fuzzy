@@ -14,5 +14,3 @@ plt.xlabel(' x ')
 plt.axis([0, 10, -0.1, 1.1])
 plt.grid(True)
 plt.show()
-
-print x[0]
