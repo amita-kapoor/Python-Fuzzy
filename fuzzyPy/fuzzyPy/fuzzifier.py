@@ -3,7 +3,7 @@
 import numpy as np
 
 
-## import the file fuzzifier.py
+## import this file using import fuzzifier
 ## Argument to the class are of type numpy array
 class Triangle():
     def __init__(self,x,low, middle,high):
