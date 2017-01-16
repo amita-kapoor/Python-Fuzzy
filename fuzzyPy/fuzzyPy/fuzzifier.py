@@ -30,7 +30,7 @@ class Trapezoid():
     def trapmf(x, a, b, c, d):
         X1 = (x - a) / (b - a)
         X2 = np.ones(x.size)
-        X3 = (c - x) / (c - b)
+        X3 = (d - x) / (d-c)
         X4 = np.minimum(np.minimum(X1, X2), X3)
         X5 = np.zeros(x.size)
         y = np.maximum(X4, X5)
