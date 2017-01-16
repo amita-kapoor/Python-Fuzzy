@@ -22,9 +22,9 @@ class Triangle():
 
 class Trapezoid():
     def __init__(self,x,low, middle,high):
-        self.low = self.trapf(x, low[0], low[1], low[2], low[3])
-        self.middle = self.trapf(x, middle[0], middle[1], middle[2],middle[3])
-        self.high = self.trapf(x, high[0], high[1], high[2],high[3])
+        self.low = self.trapmf(x, low[0], low[1], low[2], low[3])
+        self.middle = self.trapmf(x, middle[0], middle[1], middle[2],middle[3])
+        self.high = self.trapmf(x, high[0], high[1], high[2],high[3])
         
         
     def trapmf(x, a, b, c, d):
