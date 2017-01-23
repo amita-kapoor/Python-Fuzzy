@@ -30,7 +30,13 @@ class Triangle(FuzzyPy):
         self.middle = self.trimf(x, middle[0], middle[1], middle[2])
         self.high = self.trimf(x, high[0], high[1], high[2])
 
-
+class Triangle5(FuzzyPy):
+    def __init__(self, x, low2,low1, middle, high1,high2):
+        self.low2 = self.trimf(x, low2[0], low2[1], low2[2])
+        self.low1 = self.trimf(x, low1[0], low1[1], low1[2])
+        self.middle = self.trimf(x, middle[0], middle[1], middle[2])
+        self.high1 = self.trimf(x, high1[0], high1[1], high1[2])
+        self.high2 = self.trimf(x, high2[0], high2[1], high2[2])
 
 class Trapezoid(FuzzyPy):
     def __init__(self, x, low, middle, high):
@@ -38,8 +44,13 @@ class Trapezoid(FuzzyPy):
         self.middle = self.trapmf(x, middle[0], middle[1], middle[2], middle[3])
         self.high = self.trapmf(x, high[0], high[1], high[2], high[3])
 
-
-
+class Trapezoid5(FuzzyPy):
+    def __init__(self, x, low2,low1, middle, high1,high2):
+        self.low2 = self.trapmf(x, low2[0], low2[1], low2[2], low2[3])
+        self.low1 = self.trapmf(x, low1[0], low1[1], low1[2], low1[3])
+        self.middle = self.trapmf(x, middle[0], middle[1], middle[2], middle[3])
+        self.high1 = self.trapmf(x, high1[0], high1[1], high1[2], high1[3])
+        self.high2 = self.trapmf(x, high2[0], high2[1], high2[2], high2[3])
 
 class Gauss(FuzzyPy):
     def __init__(self, x, low, middle, high):
@@ -47,3 +58,10 @@ class Gauss(FuzzyPy):
         self.middle = self.gaussmf(x, middle[0], middle[1])
         self.high = self.gaussmf(x, high[0], high[1])
 
+class Gauss5(FuzzyPy):
+    def __init__(self, x, low2,low1, middle, high1,high2):
+        self.low2 = self.gaussmf(x, low2[0], low2[1])
+        self.low1 = self.gaussmf(x, low1[0], low1[1])
+        self.middle = self.gaussmf(x, middle[0], middle[1])
+        self.high1 = self.gaussmf(x, high1[0], high1[1])
+        self.high2 = self.gaussmf(x, high2[0], high2[1])
