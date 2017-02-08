@@ -21,7 +21,7 @@ class FuzzyPy():
         return y
 
     def gaussmf(self, x, c, v):
-        y = np.exp(-(x - c) ^ 2 / 2 * v ^ 2)
+        y = np.exp(-np.power((x - c) , 2) / (2 * v ^ 2.0))
         return y
 
 class Triangle(FuzzyPy):
