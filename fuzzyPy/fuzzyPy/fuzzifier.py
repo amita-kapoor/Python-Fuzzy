@@ -21,8 +21,14 @@ class FuzzyPy():
         return y
 
     def gaussmf(self, x, c, v):
+        """Compute Gaussian Membership function. """
         y = np.exp(-np.power((x - c) , 2) / (2 * v ^ 2.0))
         return y
+    
+    def softmax(x):
+    """Compute softmax values for each sets of scores in x."""
+    return np.exp(x)/np.sum(np.exp(x), axis=0)
+    
 
 class Triangle(FuzzyPy):
     def __init__(self, x, low, middle, high):
