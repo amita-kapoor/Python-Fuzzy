@@ -71,3 +71,18 @@ class Gauss5(FuzzyPy):
         self.middle = self.gaussmf(x, middle[0], middle[1])
         self.high1 = self.gaussmf(x, high1[0], high1[1])
         self.high2 = self.gaussmf(x, high2[0], high2[1])
+        
+  ## Operators Defined
+
+def intersect(A,B):
+     """Intersect two membership functions"""
+    return np.minimum(A,B)
+
+
+def union(A, B):
+    """Union of two membership functions"""
+    return np.maximum(A, B)
+
+def complement(A):
+    """complement of membership"""
+    return 1-A
