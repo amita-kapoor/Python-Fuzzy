@@ -1,4 +1,4 @@
-#import numpy as np
+import numpy as np
 
 class FuzzyPy():
     # Defines TRiangular membership finction f:x->y, with 'a' and 'c' the base of triangle and 'b' is peak
