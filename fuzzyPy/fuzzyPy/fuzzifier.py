@@ -86,3 +86,17 @@ def union(A, B):
 def complement(A):
     """complement of membership"""
     return 1-A
+
+def alphaCut(A,a):
+    """Alpha cut on membership function"""
+    A[(A>a)]=a
+    return A
+
+def add(A,B):
+    """Adds two fuzzy membership functions/sets"""
+    return np.minimum(A+B,1)
+
+
+def sub(A,B):
+    """Subtracts two fuzzy membership functions/sets"""
+    return np.maximum(A-B,0)
