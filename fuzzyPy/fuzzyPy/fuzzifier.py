@@ -22,7 +22,7 @@ class FuzzyPy():
 
     def gaussmf(self, x, c, v):
         """Compute Gaussian Membership function. """
-        y = np.exp(-np.power((x - c) , 2) / (2 * v ^ 2.0))
+        y = [np.exp(-np.power((i - c) , 2) / (2 * v ^ 2.0)) for i in x]
         return y
     
     def softmax(x):
@@ -89,8 +89,10 @@ def complement(A):
 
 def alphaCut(A,a):
     """Alpha cut on membership function"""
-    A[(A>a)]=a
-    return A
+    from copy import deepcopy
+    B = deepcopy(A)
+    B[(B < a)]= 0
+    return B
 
 def add(A,B):
     """Adds two fuzzy membership functions/sets"""
