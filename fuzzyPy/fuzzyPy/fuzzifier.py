@@ -22,7 +22,7 @@ class FuzzyPy():
 
     def gaussmf(self, x, c, v):
         """Compute Gaussian Membership function. """
-        y = [np.exp(-np.power((i - c) , 2) / (2 * v ^ 2.0)) for i in x]
+        y = [np.exp(-np.power((i - c) , 2) / (2 * v ** 2.0)) for i in x]
         return y
     
     def softmax(x):
