@@ -1,3 +1,4 @@
+## AIND Term2 Lesson 2
 import numpy as np
 from keras.utils import np_utils
 import tensorflow as tf
